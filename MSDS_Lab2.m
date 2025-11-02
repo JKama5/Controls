@@ -9,8 +9,10 @@ F = 2; % N
 % Position 𝑥 is the dependent variable.
 
 syms x_pos xx_vel
-
 xxx_accel = (1/m)*(F-(k*x_pos)-(b*xx_vel));
+
+disp('System equation of MSDS:')
+pretty(xxx_accel)
 
 %% Step 3: Create the State-Space model in MATLAB using the properties above. 
 % Set position and velocity as state variables. Include the code and answer in your report.
